@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<nav class="navbar bg-primary navbar-center" data-bs-theme="dark" style="float: center;">
+    <a class="navbar-brand" href="#" style="color: black;">
+        Online Library
+    </a>
+    <a href="{% url 'bookapp:handle_btn_click' %}" class="btn btn-primary" style="float: right;">
+    New Book +
+</a>
+
+</nav>
+
+</nav>
+{% block body %}
+{% endblock %}
+</body>
+</html>
